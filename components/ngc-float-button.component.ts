@@ -90,9 +90,10 @@ import {
   template: `
     <nav class="fab-menu" [class.active]="(state | async).display">
         <a class="fab-toggle" (click)="toggle()" [style.backgroundColor]="color">
-          <mat-icon [svgIcon]="svgIcon"> {{icon}} </mat-icon>
+          <mat-icon *ngIf="svgIcon" [svgIcon]="svgIcon"></mat-icon>
+          <mat-icon *ngIf="!svgIcon">{{icon}}</mat-icon>
         </a>
-        <ng-content></ng-content>
+        <ng-content></ng-content
     </nav>
   `
 })

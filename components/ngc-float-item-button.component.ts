@@ -74,7 +74,8 @@ import {
           <div class="content" [style.display]="content ? 'block' : 'none'">{{content}}</div>
         </div>
         <a class="fab-item" [style.backgroundColor]="color">
-           <mat-icon [svgIcon]="svgIcon"> {{ icon }} </mat-icon>
+          <mat-icon *ngIf="svgIcon" [svgIcon]="svgIcon"></mat-icon>
+          <mat-icon *ngIf="!svgIcon">{{icon}}</mat-icon>
         </a>
     </div>
   `,
