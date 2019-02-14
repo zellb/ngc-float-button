@@ -8,7 +8,7 @@
     "minify": "uglifyjs dist/bundles/ngc-float-button.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngc-float-button.umd.min.js",
     "build": "npm run transpile && npm run package && npm run minify",
     "prepare": "npm run build",
-    "postinstall": "pwd"
+    "postinstall": "pwd && mv dist/* ./ && rm -r dist"
   },
   "files": [
     "/dist/*"
