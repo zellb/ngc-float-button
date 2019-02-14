@@ -90,7 +90,7 @@ import {
   template: `
     <nav class="fab-menu" [class.active]="(state | async).display">
         <a class="fab-toggle" (click)="toggle()" [style.backgroundColor]="color">
-          <mat-icon> {{icon}} </mat-icon>
+          <mat-icon [svgIcon]="svgIcon"> {{icon}} </mat-icon>
         </a>
         <ng-content></ng-content>
     </nav>
@@ -103,6 +103,7 @@ export class NgcFloatButtonComponent implements AfterContentInit, OnDestroy, OnC
   public state: BehaviorSubject<any>;
 
   @Input() icon: string;
+  @Input() svgIcon: string;
   @Input() direction: string;
   @Input() spaceBetweenButtons: number = 55;
   @Input() open: Subject<boolean>;

@@ -74,7 +74,7 @@ import {
           <div class="content" [style.display]="content ? 'block' : 'none'">{{content}}</div>
         </div>
         <a class="fab-item" [style.backgroundColor]="color">
-           <mat-icon> {{ icon }} </mat-icon>
+           <mat-icon [svgIcon]="svgIcon"> {{ icon }} </mat-icon>
         </a>
     </div>
   `,
@@ -82,6 +82,7 @@ import {
 })
 export class NgcFloatItemButtonComponent {
   @Input() icon: string;
+  @Input() svgIcon: string;
   @Input() content: string;
   @Input() color: string = 'white';
   @Output() clicked: EventEmitter<any> = new EventEmitter();
