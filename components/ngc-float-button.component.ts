@@ -93,7 +93,7 @@ import {
           <mat-icon *ngIf="svgIcon" [svgIcon]="svgIcon"></mat-icon>
           <mat-icon *ngIf="!svgIcon">{{icon}}</mat-icon>
         </a>
-        <ng-content></ng-content
+        <ng-content></ng-content>
     </nav>
   `
 })
