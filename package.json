@@ -4,7 +4,7 @@
   "description": "Google Material Float Button - Implementation for Angular v4+",
   "scripts": {
     "postinstall": "npm run clean",
-    "clean": "pwd && mkdir ../temp && pwd && mv * ../temp && pwd && mv ../temp/dist/* . && pwd && rm -fr ../temp",
+    "clean": "pwd && sudo mkdir ../temp && pwd && sudo mv * ../temp && pwd && sudo mv ../temp/dist/* . && pwd && sudo rm -fr ../temp",
     "prepare": "npm run build",
     "transpile": "ngc",
     "package": "rollup -c",
