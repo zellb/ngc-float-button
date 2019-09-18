@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "Google Material Float Button - Implementation for Angular v4+",
   "scripts": {
+    "prepare": "npm run build",
     "transpile": "ngc",
     "package": "rollup -c",
-    "minify": "uglifyjs dist/bundles/ngc-float-button.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngc-float-button.umd.min.js",
+    "minify": "uglifyjs bundles/ngc-float-button.umd.js --screw-ie8 --compress --mangle --comments --output bundles/ngc-float-button.umd.min.js",
     "build": "npm run transpile && npm run package && npm run minify"
   },
   "files": [
-    "/dist/*"
+    "/*"
   ],
   "keywords": [
     "angular2",
@@ -24,7 +25,6 @@
   "author": "Gustavo Costa - @GustavoCostaW",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": "^8.2.6"
   },
   "devDependencies": {
     "@angular/animations": "^8.2.6",
