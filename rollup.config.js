@@ -1,6 +1,6 @@
 export default {
     entry: 'index.js',
-    dest: 'bundles/ngc-float-button.umd.js',
+    dest: 'dist/bundles/ngc-float-button.umd.js',
     sourceMap: false,
     format: 'umd',
     moduleName: 'ng.floatbutton',
