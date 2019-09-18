@@ -88,8 +88,8 @@ export class NgcFloatItemButtonComponent {
   @Input() color: string = 'white';
   @Output() clicked: EventEmitter<any> = new EventEmitter();
   @Input() disabled: boolean = false;
-  @ViewChild('elementref') elementref;
-  @ViewChild('contentref') contentref;
+  @ViewChild('elementref', {static: false}) elementref;
+  @ViewChild('contentref', {static: false}) contentref;
 
   emitClickEvent($event: Event) {
     if (this.disabled)

@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{},"exports":[{"from":"./components/ngc-float-button.module","export":["NgcFloatButtonModule"]},{"from":"./components/ngc-float-button.component","export":["NgcFloatButtonComponent"]},{"from":"./components/ngc-float-item-button.component","export":["NgcFloatItemButtonComponent"]}]}]

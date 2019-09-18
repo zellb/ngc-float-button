@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "Google Material Float Button - Implementation for Angular v4+",
   "scripts": {
+    "prepare": "build",
     "transpile": "ngc",
     "package": "rollup -c",
     "minify": "uglifyjs dist/bundles/ngc-float-button.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngc-float-button.umd.min.js",
-    "build": "npm run transpile && npm run package && npm run minify",
-    "prepare": "npm run build"
+    "build": "npm run transpile && npm run package && npm run minify"
   },
   "files": [
     "/dist/*"
@@ -25,26 +25,27 @@
   "author": "Gustavo Costa - @GustavoCostaW",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": ">=4.4.4"
+    "@angular/core": "^8.2.6"
   },
   "devDependencies": {
-    "@angular/cdk": "^2.0.0-beta.12",
-    "@angular/common": "^4.4.4",
-    "@angular/compiler": "^4.4.4",
-    "@angular/compiler-cli": "^4.4.4",
-    "@angular/platform-browser": "^4.4.4",
-    "@angular/platform-browser-dynamic": "^4.4.4",
-    "@angular/core": "^4.4.4",
-    "@angular/forms": "^4.4.4",
-    "@angular/material": "^2.0.0-beta.12",
-    "@angular/animations": "^4.4.4",
-    "@angular/http": "^4.4.4",
-    "@types/node": "^8.5.9",
+    "@angular/animations": "^8.2.6",
+    "@angular/common": "^8.2.6",
+    "@angular/compiler": "^8.2.6",
+    "@angular/compiler-cli": "^8.2.6",
+    "@angular/core": "^8.2.6",
+    "@angular/material": "^8.2.0",
+    "@angular/cdk": "^8.2.0",
+    "@angular/elements": "^8.2.6",
+    "@angular/forms": "^8.2.6",
+    "@angular/platform-browser": "^8.2.6",
+    "@angular/platform-browser-dynamic": "^8.2.6",
+    "@angular/router": "^8.2.6",
+    "@types/node": "^10.14.17",
     "core-js": "^2.4.1",
     "rollup": "^0.50.0",
-    "rxjs": "^5.5.6",
-    "typescript": "^2.7.1",
+    "rxjs": "^6.5.3",
+    "typescript": "^3.5.3",
     "uglify-js": "^3.3.9",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.9.1"
   }
 }
